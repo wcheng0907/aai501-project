@@ -1,3 +1,5 @@
+import os
+import shutil
 
 def parse_data(file_name):
     output_fp = open("wine_data.csv", "a")
@@ -28,7 +30,15 @@ def parse_data(file_name):
 
     return count
 
+def recreate_data_file():
+    if os.path.exists('wine_data.csv'):
+        os.remove('wine_data.csv')
+        shutil.copyfile('wine_data.csv.bak', 'wine_data.csv')
+
+
 def main():
+    # this script should only be run once but here is the handling if run multiple times
+    recreate_data_file()
     c = 0
     c = c + parse_data("winequalityN.csv")
     c = c + parse_data("winequality-red.csv")
