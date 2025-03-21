@@ -1,0 +1,46 @@
+{
+    "tables": {
+        "table": {
+            "columns": {
+                "fixed_acidity": {
+                    "sdtype": "numerical"
+                },
+                "volatile_acidity": {
+                    "sdtype": "numerical"
+                },
+                "citric_acid": {
+                    "sdtype": "numerical"
+                },
+                "residual_sugar": {
+                    "sdtype": "numerical"
+                },
+                "chlorides": {
+                    "sdtype": "numerical"
+                },
+                "free_sulfur_dioxide": {
+                    "sdtype": "numerical"
+                },
+                "total_sulfur_dioxide": {
+                    "sdtype": "numerical"
+                },
+                "density": {
+                    "sdtype": "numerical"
+                },
+                "pH": {
+                    "sdtype": "numerical"
+                },
+                "sulphates": {
+                    "sdtype": "numerical"
+                },
+                "alcohol": {
+                    "sdtype": "numerical"
+                },
+                "quality": {
+                    "sdtype": "categorical"
+                }
+            }
+        }
+    },
+    "relationships": [],
+    "METADATA_SPEC_VERSION": "V1"
+}
